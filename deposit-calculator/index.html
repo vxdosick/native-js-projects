@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposit Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Deposit Calculator</h1>
+      <form action="#" onsubmit="submitData(event)">
+        <div class="field">
+          <img src="./images/sum.svg" alt="sum icon" />
+          <label for="sum">Sum</label>
+          <input
+            type="number"
+            id="sum"
+            placeholder="Enter deposit sum"
+            name="sum"
+            value="100000"
+            required
+          />
+        </div>
+        <div class="field">
+          <img src="./images/clock.svg" alt="clock icon" />
+          <label for="day">Dedline (days)</label>
+          <input
+            type="number"
+            id="day"
+            placeholder="Dedline (days)"
+            name="day"
+            value="365"
+            required
+          />
+        </div>
+        <div class="field">
+          <img src="./images/percent.svg" alt="percent icon" />
+          <label for="percent">Interest rate in %</label>
+          <input
+            type="number"
+            id="month"
+            placeholder="Rate"
+            name="percent"
+            value="8"
+            required
+          />
+        </div>
+        <div class="field">
+          <img src="./images/question.svg" alt="question icon" />
+          <label for="capital">Capitalisation</label>
+          <select name="isCapital" id="capital" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button>Calculate</button>
+      </form>
+      <div class="result"></div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
